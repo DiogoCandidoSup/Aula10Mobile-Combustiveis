@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/geometric">
+
+    <!-- TITULO ======================================================= -->
+    <ImageView
+        android:id="@+id/imgTela"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        app:srcCompat="@drawable/butijao" />
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_toRightOf="@+id/imgTela"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+
+        android:text="EFICIENCIA COMBUSTIVEIS"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/txtCombustivel"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgTela"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Preço da Gasolina na refinaria:"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/edCombustivel"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCombustivel"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/txtAlcool"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edCombustivel"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Preço do Alcool na refinaria:"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/edAlcool"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlcool"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:hint=""
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAlcool"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Distribuição e revenda: "
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edAlcool"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Custo Etanol Anidro: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed1"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Imposto Estadual: "
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ed3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed2"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt3"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Impostos Federais: "
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ed4"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed3"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt4"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Parcela Petrobras: "
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ed5"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed4"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+
+        android:hint=""
+        android:maxLines="1"
+        android:padding="10dp"
+
+        android:inputType="numberDecimal"
+        />
+
+
+    <Button
+        android:id="@+id/btCalcular"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed5"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="150dp"
+
+        android:backgroundTint="@color/green"
+        android:padding="10dp"
+
+        android:text="Calcular"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>
